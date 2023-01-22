@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+   <html lang="es">
+      <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Ocean Hotel</title>
+         <link rel="icon" type="image/vnd.microsoft.icon" href="./images/img-pestaña.jpg">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+         <!-- font awesome cdn link  -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+         <!-- custom css file link  -->
+         <link rel="stylesheet" href="./css/style.css">
+
+      </head>
+      <body>
+   
+      <!-- header section starts  -->
+
+      <section class="header">
+
+         <div class="flex">
+            <a href="#home" class="logo">Hotels And Resorts</a>
+            <a href="#availability" class="btn">Consultar disponibilidad</a>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+
+         <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre nosotros</a>
+            <a href="#reservation">Reservaciones</a>
+            <a href="#gallery">Galería</a>
+            <a href="#contact">Contacto</a>
+            <a href="#reviews">Reseñas</a>
+            <a href="mybookings">Mis Reservaciones</a>
+         </nav>
+      </section>
+
+      <!-- header section ends -->
+
+      <!-- home section starts  -->
+
+      <section class="home" id="home">
+         <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+               <div class="box swiper-slide">
+                  <img src="images/home-img-1.jpg" alt="">
+                  <div class="flex">
+                     <h3>Habitaciones de lujo</h3>
+                     <a href="#availability" class="btn">Consultar disponibilidad</a>
+                  </div>
+               </div>
+
+               <div class="box swiper-slide">
+                  <img src="images/home-img-2.jpg" alt="">
+                  <div class="flex">
+                     <h3>Comidas y Bebidas</h3>
+                     <a href="#reservation" class="btn">Hacer una reserva</a>
+                  </div>
+               </div>
+
+               <div class="box swiper-slide">
+                  <img src="images/home-img-3.jpg" alt="">
+                  <div class="flex">
+                     <h3>Salones de lujo</h3>
+                     <a href="#contact" class="btn">Contacta con nosotros</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+         </div>
+
+      </section>
+
+      <!-- home section ends -->
+
+      <!-- availability section starts  -->
+
+      <section class="availability" id="availability">
+         <form action="" method="post">
+            <div class="flex">
+               <div class="box">
+                  <p>Check in <span>*</span></p>
+                  <input type="date" name="check_in" class="input" required>
+               </div>
+               <div class="box">
+                  <p>Check out <span>*</span></p>
+                  <input type="date" name="check_out" class="input" required>
+               </div>
+               <div class="box">
+                  <p>Adultos<span>*</span></p>
+                  <select name="adults" class="input" required>
+                     <option value="1">1 adulto</option>
+                     <option value="2">2 adultos</option>
+                     <option value="3">3 adultos</option>
+                     <option value="4">4 adultos</option>
+                     <option value="5">5 adultos</option>
+                     <option value="6">6 adultos</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>Niños<span>*</span></p>
+                  <select name="childs" class="input" required>
+                     <option value="-">Sin niños/as</option>
+                     <option value="1">1 niño/a</option>
+                     <option value="2">2 niños/as</option>
+                     <option value="3">3 niños/as</option>
+                     <option value="4">4 niños/as</option>
+                     <option value="5">5 niños/as</option>
+                     <option value="6">6 niños/as</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>Habitaciones<span>*</span></p>
+                  <select name="rooms" class="input" required>
+                     <option value="1">1 habitación</option>
+                     <option value="2">2 habitaciones</option>
+                     <option value="3">3 habitaciones</option>
+                     <option value="4">4 habitaciones</option>
+                     <option value="5">5 habitaciones</option>
+                     <option value="6">6 habitaciones</option>
+                  </select>
+               </div>
+            </div>
+            <input type="submit" value="Consultar disponibilidad" name="check" class="btn">
+         </form>
+      </section>
+
+      <!-- availability section ends -->
+
+      <!-- about section starts  -->
+
+      <section class="about" id="about">
+         <div class="row">
+            <div class="image">
+               <img src="images/about-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>Mejor personal</h3>
+               <p>Dedicados al 100% en nuestros huéspedes, brindándoles el mejor servicio</p>
+               <a href="#reservation" class="btn">Hacer una reserva</a>
+            </div>
+         </div>
+         <div class="row revers">
+            <div class="image">
+               <img src="images/about-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>Mejores comidas</h3>
+               <p>Contamos con comida de todo el mundo, en nuestros 6 restaurantes</p>
+               <a href="#contact" class="btn">Contacta con nosotros</a>
+            </div>
+         </div>
+         <div class="row">
+            <div class="image">
+               <img src="images/piscina.webp" alt="">
+            </div>
+            <div class="content">
+               <h3>Piscinas</h3>
+               <p>Contamos con una de las piscinas más grandes del mundo</p>
+               <a href="#availability" class="btn">Consultar disponibilidad</a>
+            </div>
+         </div>
+      </section>
+
+      <!-- about section ends -->
+
+      <!-- services section starts  -->
+
+      <section class="services">
+         <div class="box-container">
+            <div class="box">
+               <img src="images/icon-1.png" alt="">
+               <h3>Comidas y Bebidas</h3>
+               <p>Ofrecemos variedad de comidas y bebidas</p>
+            </div>
+            <div class="box">
+               <img src="images/icon-2.png" alt="">
+               <h3>Comedor al aire libre</h3>
+               <p>Puede comer y apreciar la hermosa vista del mar</p>
+            </div>
+            <div class="box">
+               <img src="images/icon-3.png" alt="">
+               <h3>Vista a la playa</h3>
+               <p>¿Le gustaría ver el amanecer? En este hotel lo puede hacer!</p>
+            </div>
+            <div class="box">
+               <img src="images/icon-4.png" alt="">
+               <h3>Decoraciones</h3>
+               <p>El hotel cuenta con decoraciones y diseños nunca antes vistos</p>
+            </div>
+            <div class="box">
+               <img src="images/icon-5.png" alt="">
+               <h3>Piscinas</h3>
+               <p>Contamos con dos piscinas al aire libre, una con agua climatizada</p>
+            </div>
+            <div class="box">
+               <img src="images/icon-6.png" alt="">
+               <h3>Playa del complejo</h3>
+               <p>Tenemos nuestro propio complejo para que disfrute de la playa sin inconvenientes</p>
+            </div>
+         </div>
+      </section>
+
+      <!-- services section ends -->
+
+      <!-- reservation section starts  -->
+
+      <section class="reservation" id="reservation">
+         <form action="" method="post">
+            <h3>Hacer una reserva</h3>
+            <div class="flex">
+               <div class="box">
+                  <p>Check in <span>*</span></p>
+                  <input type="date" name="check_in" class="input" required>
+               </div>
+               <div class="box">
+                  <p>Check out <span>*</span></p>
+                  <input type="date" name="check_out" class="input" required>
+               </div>
+               <div class="box">
+                  <p>Adultos<span>*</span></p>
+                  <select name="adults" class="input" required>
+                     <option value="1">1 adulto</option>
+                     <option value="2">2 adultos</option>
+                     <option value="3">3 adultos</option>
+                     <option value="4">4 adultos</option>
+                     <option value="5">5 adultos</option>
+                     <option value="6">6 adultos</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>Niños <span>*</span></p>
+                  <select name="childs" class="input" required>
+                     <option value="-">Sin niño/a</option>
+                     <option value="1">1 niño/a</option>
+                     <option value="2">2 niños/as</option>
+                     <option value="3">3 niños/as</option>
+                     <option value="4">4 niños/as</option>
+                     <option value="5">5 niños/as</option>
+                     <option value="6">6 niños/as</option>
+                  </select>
+               </div>
+               <div class="box">
+                  <p>Habitaciones <span>*</span></p>
+                  <select name="rooms" class="input" required>
+                     <option value="1">1 habitación</option>
+                     <option value="2">2 habitaciones</option>
+                     <option value="3">3 habitaciones</option>
+                     <option value="4">4 habitaciones</option>
+                     <option value="5">5 habitaciones</option>
+                     <option value="6">6 habitaciones</option>
+                  </select>
+               </div>
+            </div>
+            <input type="submit" value="Consultar disponibilidad" name="check" class="btn">
+         </form>
+      </section>
+
+      <!-- reservation section ends -->
+
+      <!-- gallery section starts  -->
+
+      <section class="gallery" id="gallery">
+         <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+               <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+               <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+               <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+               <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+               <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+               <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+
+      <!-- gallery section ends -->
+
+      <!-- contact section starts  -->
+
+      <section class="contact" id="contact">
+         <div class="row">
+            <form action="" method="post">
+               <h3>Envíanos un mensaje</h3>
+               <input type="text" name="name" required maxlength="50" placeholder="Ingrese su nombre" class="box">
+               <input type="email" name="email" required maxlength="50" placeholder="Ingrese su e-mail" class="box">
+               <input type="number" name="number" required maxlength="10" min="0" max="99999999999999" placeholder="Ingrese su número de teléfono" class="box">
+               <textarea name="msg" class="box" required maxlength="1000" placeholder="Ingrese su mensaje" cols="30" rows="10"></textarea>
+               <input type="submit" value="Enviar mensaje" name="send" class="btn">
+            </form>
+            <div class="faq">
+               <h3 class="title">Preguntas Frecuentes</h3>
+               <div class="box active">
+                  <h3>¿Cómo cancelar la reserva?</h3>
+                  <p>Nos envía un mensaje con el número de reserva y se procede a cancelarla</p>
+               </div>
+               <div class="box">
+                  <h3>¿Hay alguna vacante?</h3>
+                  <p>Siempre hay vacantes, nos envía un mensaje y con gusto se la enviamos</p>
+               </div>
+               <div class="box">
+                  <h3>¿Cuáles son las formas de pago?</h3>
+                  <p>Las formas de pago son PayPal, Mercado Pago, Tarjeta de crédito, Tarjeta de débito y dinero en efectivo</p>
+               </div>
+               <div class="box">
+                  <h3>¿Cómo reclamar códigos de cupones?</h3>
+                  <p>Cada 100 huéspedes les enviaremos un código de descuento, hasta agotar stock</p>
+               </div>
+               <div class="box">
+                  <h3>¿Cuáles son los requisitos de edad?</h3>
+                  <p>La edad es ilimitada, cualquier persona puede hospedarse en nuestro hotel</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- contact section ends -->
+
+      <!-- reviews section starts  -->
+
+      <section class="reviews" id="reviews">
+         <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide box">
+                  <img src="images/pic-1.png" alt="">
+                  <h3>Pablo Perez</h3>
+                  <p>Excelente atención, fuí con mi familia en enero y la pasamos increíble. Sin duda vamos a volver!</p>
+               </div>
+               <div class="swiper-slide box">
+                  <img src="images/pic-2.png" alt="">
+                  <h3>Camila Sarkani</h3>
+                  <p>La comida y la atención estupenda!</p>
+               </div>
+               <div class="swiper-slide box">
+                  <img src="images/pic-3.png" alt="">
+                  <h3>Agustín Alvarez</h3>
+                  <p>Fuí con mi novia y la pasamos muy bien. Excelente lugar para relajarse</p>
+               </div>
+               <div class="swiper-slide box">
+                  <img src="images/pic-4.png" alt="">
+                  <h3>Valentina Arias</h3>
+                  <p>Fuimos con mi familia y nos llevamos una excelente experiencia en ese hotel</p>
+               </div>
+               <div class="swiper-slide box">
+                  <img src="images/pic-5.png" alt="">
+                  <h3>Lucas Pappalardo</h3>
+                  <p>Excelente servicio, sin dudas volveré a ir</p>
+               </div>
+               <div class="swiper-slide box">
+                  <img src="images/pic-6.png" alt="">
+                  <h3>Emma Thompson</h3>
+                  <p>Muy lindo hotel, la comida muy rica. Servicio 10/10</p>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+
+      <!-- reviews section ends  -->
+
+      <!-- footer section starts  -->
+
+      <section class="footer">
+         <div class="box-container">
+            <div class="box">
+               <a href="tel:+5492613843124"><i class="fas fa-phone"></i>+54 9 261 3843124</a>
+               <a href="mailto:silvig243@gmail.com"><i class="fas fa-envelope"></i> silvig243@gmail.com</a>
+               <a href="#"><i class="fas fa-map-marker-alt"></i> Cancún, México</a>
+            </div>
+            <div class="box">
+               <a href="#home">Home</a>
+               <a href="#about">Sobre nosotros</a>
+               <a href="#reservation">Reservaciones</a>
+               <a href="#gallery">Galería</a>
+               <a href="#contact">Contacto</a>
+               <a href="#reviews">Reseñas</a>
+            </div>
+            <div class="box">
+               <a href="https://www.facebook.com/Silvi.Gonzalez.17">Facebook <i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/silvi.gonzalez">Instagram <i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/silvana-gonzalez-lopez">Linkedin <i class="fab fa-linkedin"></i></a>
+            </div>
+         </div>
+         <div class="credit">&copy; Desarrollado por
+            <a href="https://silvi17.github.io/Portafolio/">González López Silvana Gabriela</a>
+         </div>
+      </section>
+
+      <!-- footer section ends -->
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+      <!-- custom js file link  -->
+      <script src="./js/script.js"></script>
+
+   </body>
+</html>
